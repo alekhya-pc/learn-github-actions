@@ -1,6 +1,7 @@
 name: learn-github-actions
 # run-name: ${{ github.actor }} is learning GitHub Actions
-on: [push, workflow_dispatch]
+on: [push]
+# on: [push, workflow_dispatch] this can also be used in place of the above command it will manually ask us to trigger the workflow in github.
 jobs:
   DEV:
     runs-on: ubuntu-latest
